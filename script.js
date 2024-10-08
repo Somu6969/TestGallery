@@ -11,7 +11,7 @@ async function fetchMedia() {
 
         data.forEach(file => {
             if (file.name.endsWith('.jpg') || file.name.endsWith('.png') || file.name.endsWith(".ARW")) {
-                if (file.name.endsWith(".jpg")) {
+                if (file.name.endsWith(".jpg") || file.name.endsWith(".png")) {
 
                     const imagecard = document.createElement("div");
                     imagecard.setAttribute("class", "image-card");
